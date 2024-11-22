@@ -7,10 +7,28 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <h1 class="hidden">To do list</h1>
-        <img id="main-logo" src="images/vecteezy_the-woman-is-standing-with-a-large-to-do-list-plan_13194673.jpg">
-      </header>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <i class="fas fa-check-circle"></i>
+        <h1>ElegantTasks</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Today</a></li>
+          <li><a href="#">Upcoming</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button class="add-task"><i class="fas fa-plus"></i> New Task</button>
+        <div class="user-profile">
+          <img src="https://placekitten.com/40/40" alt="User Profile">
+        </div>
+      </div>
+    </div>
+  </header>
+
       <main>
         <section id="todo">
           <h2>To Dos</h2>
@@ -46,6 +64,10 @@
             <li>Item 5</li>
             <li>Item 6</li>
           </ul>
-    
+        </section>
+      </main>
+       
+
+      
 </body>
 </html>
