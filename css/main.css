@@ -98,27 +98,13 @@ ul li {
 }
 
 .inprogress li:nth-child(odd) {
-    background-color: brown;
+    background-color: rgb(239, 6, 6);
 }
 
 .done li:nth-child(odd) {
-    background-color: rgb(40, 208, 6);
+    background-color: rgb(34, 205, 19);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
-
-:root {
-  --primary-color: #3a506b;
-  --secondary-color: #6fffe9;
-  --text-color: #0b132b;
-  --bg-color: #f8f9fa;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -128,7 +114,7 @@ body {
 }
 
 .header {
-  background-color: #ffffff;
+  background-color: #9a7d7d;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
@@ -144,68 +130,21 @@ body {
   align-items: center;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo i {
-  font-size: 2rem;
-  color: var(--secondary-color);
-  margin-right: 0.5rem;
-}
-
 .logo h1 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
-  color: var(--primary-color);
+  color: #f8f9fa;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
+.todo li:hover {
+  background-color: #c1ad9e; /* Change background color on hover */
+  color: white; }
+
+.inprogress li:hover {
+  background-color:  #fe7a7a;
+  color: white; 
 }
 
-nav ul li {
-  margin-left: 2rem;
+.done li:hover {
+  background-color: rgb(108, 255, 108);
 }
-
-nav ul li a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: 400;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover, nav ul li a.active {
-  color: var(--secondary-color);
-}
-
-.user-actions {
-  display: flex;
-  align-items: center;
-}
-
-.add-task {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-weight: 700;
-}
-
-.add-task:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
-
-.user-profile img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-left: 1rem;
-}
-
