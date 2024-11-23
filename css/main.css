@@ -10,13 +10,14 @@ body {
 
 body {
     background-color: antiquewhite;
-    background-image: url(../images/bg2.jpg);
+    background: url(https://e0.pxfuel.com/wallpapers/297/842/desktop-wallpaper-mountains-best-for-background-market-aesthetic-mountain.jpg);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 }
 
 header h1 {
@@ -30,24 +31,6 @@ header {
     align-items: center;
 }
 
-#main-logo {
-    width: 300px;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 10px 10px 20px;
-    max-width: 200px;  /* Adjust this value to your desired width */
-    max-height: 60px;  /* Adjust this value to your desired height */
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    vertical-align: middle;
-    transition: background-color 0.5s ease;
-    top: 0;
-    left: 0;
-    right: 0;
-
-}
-
 main {
     display: flex;
     justify-content: center;
@@ -55,6 +38,8 @@ main {
     display: flex;
     align-items: center;
     height: 100%;
+    margin-top: 80px; /* Adjust this value for desired gap */
+    padding: 20px; 
     
 }
 
@@ -63,10 +48,11 @@ section {
     border: 4px solid white ;
     border-radius: 8px;
     margin: 10px;
+    backdrop-filter: blur(6px);
 }
 
 section h2 {
-    color: gray;
+    color: rgb(214, 209, 209);
     padding: 5px 10px;
 }
 
@@ -75,7 +61,7 @@ section:first-of-type {
 }
 
 #inprogress {
-    border: 4px solid red;
+    border: 4px solid rgb(255, 100, 100) ;
 }
 
 #done {
@@ -93,32 +79,16 @@ ul li {
     text-transform: uppercase;
 }
 
-.todo li:nth-child(odd) {
-    background-color: rgb(126, 116, 104);
-}
 
-.inprogress li:nth-child(odd) {
-    background-color: rgb(239, 6, 6);
-}
-
-.done li:nth-child(odd) {
-    background-color: rgb(34, 205, 19);
-}
-
-
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-}
 
 .header {
-  background-color: #9a7d7d;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    background-color: #9eaadf;
+    box-shadow: 0 2px 10px rgba(104, 100, 100, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(to bottom right, #a56471, #5c68a3);
+    color: #333;
 }
 
 .header-content {
@@ -136,15 +106,61 @@ body {
   color: #f8f9fa;
 }
 
+
+/* Hover for boxes */
+
 .todo li:hover {
-  background-color: #c1ad9e; /* Change background color on hover */
+  background-color: #c1ad9e; 
   color: white; }
 
 .inprogress li:hover {
-  background-color:  #fe7a7a;
+  background-color:  #c91818;
   color: white; 
 }
 
 .done li:hover {
   background-color: rgb(108, 255, 108);
+}
+
+/* outside color for boxes*/
+
+section:first-of-type {
+    border: 4px solid grey;
+}
+
+#inprogress {
+    border: 4px solid rgb(255, 100, 100) ;
+}
+
+#done {
+    border: 4px solid green;
+}
+
+/* in case i need that 
+
+.todo li:nth-child(odd) {
+    background-color: rgb(126, 116, 104);
+}
+
+.inprogress li:nth-child(odd) {
+    background-color: rgb(255, 100, 100) ;
+}
+
+.done li:nth-child(odd) {
+    background-color: rgb(34, 205, 19);
+} */
+
+#todo ul li {
+    border-bottom: 1px solid  grey;
+    border-top: 1px solid grey;
+}
+
+#inprogress ul li {
+    border-bottom: 1px solid rgb(255, 100, 100) ;
+    border-top: 1px solid rgb(255, 100, 100) ;
+}
+
+#done ul li {
+    border-bottom: 1px solid rgb(34, 205, 19);
+    border-top: 1px solid rgb(34, 205, 19);;
 }
