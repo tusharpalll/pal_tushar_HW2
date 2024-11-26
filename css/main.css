@@ -6,6 +6,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -163,4 +164,53 @@ section:first-of-type {
 #done ul li {
     border-bottom: 1px solid rgb(34, 205, 19);
     border-top: 1px solid rgb(34, 205, 19);;
+}
+
+/* Checkbox and Emoji */
+.checkbox + .emoji {
+    display:none; /
+}
+.checkbox:checked + .emoji {
+    display:inline; /* Show emoji when checkbox is checked */
+}
+ 
+/* Borders for sections */
+section:first-of-type {
+    border-color:#808080; 
+}
+#inprogress {
+    border-color:#ff6464; 
+}
+#done {
+    border-color:#228b22; 
+}
+ 
+/* Borders for list items */
+#todo ul li,
+#inprogress ul li,
+#done ul li {
+   border-bottom-width:px solid grey; 
+}
+
+blockquote {
+    font-style: italic;
+    color: #000000; /* Same color as header */
+    border-left: 4px solid #5c68a3; 
+    padding-left: 10px;
+    margin-left: 0; 
+}
+ 
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #a56471, #5c68a3);
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+#quote {
+    border-color: #9eaadf;
+
 }
