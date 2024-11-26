@@ -32,8 +32,8 @@ This project is a creative to-do list web application designed to help users org
 
 1. Fork the repository.
 2. Create a feature branch (`git checkout -dev.tushar.script`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/your-feature-name`).
+3. Commit your changes (`git commit -m 'Added some feature'`).
+4. Push to the branch (`git push origin feature/your-dev.tushar.script`).
 5. Open a pull request.
 
 ## License
